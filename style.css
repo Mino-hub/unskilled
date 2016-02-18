@@ -1,0 +1,267 @@
+/*
+* Theme Name: unskilled 
+*/
+body{
+    color:#552200;
+}
+*{
+    box-sizing:border-box;
+}
+a{
+    color:#552200;
+}
+a:link{
+    color:#552200;
+}
+a:visited{
+    color:#aaaaaa;
+}
+a:hover{
+    color:orangered;
+}
+a:active{
+    color:#999999;
+}
+header{
+    padding:40px 0 20px 0;
+}
+footer{
+    padding:20px;
+    color:#ffffff;
+    background-color:#e08107;
+}
+footer a:link{
+    color:#ffffff;
+    background-color:#e08107;
+}
+footer a:visited{
+    color:#ffffff;
+    background-color:#e08107;
+}
+footer a:hover{
+    color:orangered;
+    background-color:#e08107;
+}
+ul{
+    padding:0;
+}
+li{
+    padding:5px 0;
+    list-style-type:none;
+}
+header img{
+    max-width:100%;
+    margin-bottom:20px;
+}
+.navbar{
+    margin-bottom:0px;
+}
+.headerDisp{
+    margin-bottom:20px;
+    font-weight:900;
+}
+.articleDate{
+    margin-bottom:10px;
+    padding:5px 0;
+}
+.articleCategory{
+    margin-bottom:20px;
+    padding:5px 0;
+}
+.articleCategory a{
+    margin-right:20px;
+    color:#71634d;
+}
+.articleTitle{
+    margin-bottom:20px;
+    padding:5px 0;
+}
+.recomend img{
+    width:90%;
+    height:auto;
+    margin-bottom:40px;
+}
+.snsWrap{
+    width:100%;
+    margin:0 auto;
+}
+.outline{
+    width:100%;
+    margin:0 auto;
+    margin-bottom:40px;
+    padding:20px;
+    border:1px solid #aaaaaa;
+}
+.snsBo{
+    margin-right:5px;
+    margin-bottom:0px;
+    display: inline-block;
+    vertical-align: top;
+}
+.fb{
+    width:120px
+}
+.hb{
+    width:80px
+}
+.tw{
+    width:75px
+}
+@media (min-width: 320px){
+    .recomend img{
+        width:70%;
+        height:auto;
+        margin-bottom:40px;
+    }
+    .outline{
+        width:100%;
+        margin:0 auto;
+        margin-bottom:40px;
+        padding:20px;
+        border:1px solid #aaaaaa;
+    }
+    .snsWrap{
+        width:140px;
+        margin:0 auto;
+    }
+    .snsBo{
+        margin-right:0px;
+        display: block;
+        margin:0 auto;
+        margin-bottom:10px;
+    }
+}
+@media (min-width: 768px){
+    .recomend img{
+        width:50%;
+        height:auto;
+        margin-bottom:40px;
+    }
+    .outline{
+        width:50%;
+        margin:0 auto;
+        margin-bottom:40px;
+        padding:20px;
+        border:1px solid #aaaaaa;
+    }
+    .snsWrap{
+        width:307px;
+        margin:0 auto;
+    }
+    .snsBo{
+        margin-right:5px;
+        margin-bottom:0px;
+        display: inline-block !important;
+        vertical-align: top;
+    }
+}
+.outlineWrap{
+    width:100%;
+}
+.outlineTitle{
+    margin-bottom:5px;
+}
+.outlineToggle{
+    cursor:pointer;
+}
+.outlineToggle:hover{
+    color:orangered;
+}
+.outlineh1{
+    font-size:110%;
+    font-weight:900;
+    margin-bottom:5px;
+    padding-left:0px;
+}
+.outlineh2{
+    font-size:110%;
+    font-weight:900;
+    margin-bottom:5px;
+    padding-left:0px;
+}
+.outlineh3{
+    margin-bottom:5px;
+    padding-left:20px;
+}
+.outlineh4{
+    margin-bottom:5px;
+    padding-left:40px;
+}
+.outlineh5{
+    margin-bottom:5px;
+    padding-left:60px;
+}
+.outlineh6{
+    margin-bottom:5px;
+    padding-left:6px;
+}
+.content img{
+    max-width:100%;
+    height:auto;
+}
+.newArticleSpace,
+.categorySpace,
+.authorSpace,
+.archiveSpace{
+    margin-bottom:20px;
+    padding:0 20px;
+}
+.newArticleTitle,
+.categoryTitle,
+.authorTitle,
+.archiveTitle{
+    margin-bottom:20px;
+    padding:5px 0;
+    color:#ffffff;
+    background-color:#e08107;
+}
+.relatedTitle{
+    font-size:200%;
+
+}
+.pageNation{
+    margin:20px 0;
+}
+.sidebar{
+     margin-top:20px;
+}
+.authorSpace img{
+    width:100px;
+    height:100px;
+    margin-bottom:20px;
+}
+.authorSpace p{
+    font-size:80%;
+}
+.authorName{
+    font-size:120%;
+    font-weight:900;
+    margin-bottom:10px;
+}
+.indexEx{
+    margin-bottom:20px;
+    padding:20px;
+    border:1px solid #dddddd;
+}
+.is{
+    font-size:200%;
+}
+.content h2{
+    margin-bottom:20px;
+    padding:0 0 20px 0;
+    border-bottom:1px solid #aaaaaa;
+}
+.content h3,h4,h5,h6{
+    margin-bottom:20px;
+}
+.content p{
+    margin-bottom:20px;
+}
+.content dl{
+    padding:20px;
+    border:1px solid #dddddd;
+}
+.content dt{
+}
+.content dd{
+}
