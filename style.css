@@ -2,7 +2,7 @@
 * Theme Name: unskilled 
 */
 body{
-    color:#552200;
+    color:#332200;
 }
 *{
     box-sizing:border-box;
@@ -107,6 +107,10 @@ header img{
 .tw{
     width:75px
 }
+.related
+{
+    margin-bottom:40px;
+}
 @media (min-width: 320px){
     .recomend img{
         width:70%;
@@ -123,6 +127,7 @@ header img{
     .snsWrap{
         width:140px;
         margin:0 auto;
+        margin-bottom:40px;
     }
     .snsBo{
         margin-right:0px;
@@ -130,6 +135,42 @@ header img{
         margin:0 auto;
         margin-bottom:10px;
     }
+    .relatedTitle{
+        text-align:center;
+    }
+    .content{
+        padding:0 0px; 
+    }
+}
+.outlineWrap{
+    width:100%;
+}
+.outlineTitle{
+    margin-bottom:5px;
+}
+.outlineToggle{
+    cursor:pointer;
+}
+.outlineToggle:hover{
+    color:orangered;
+}
+.outlineh1{
+    font-size:110%;
+    font-weight:900;
+    margin-bottom:5px;
+    padding-left:0px;
+}
+.outlineh2{
+    font-size:110%;
+    font-weight:900;
+    margin-bottom:5px;
+    padding-left:0px;
+}
+.outlineh3{
+    margin-bottom:5px;
+    padding-left:20px;
+}
+.outlineh4{
 }
 @media (min-width: 768px){
     .recomend img{
@@ -147,12 +188,19 @@ header img{
     .snsWrap{
         width:307px;
         margin:0 auto;
+        margin-bottom: 40px;
     }
     .snsBo{
         margin-right:5px;
         margin-bottom:0px;
         display: inline-block !important;
         vertical-align: top;
+    }
+    .relatedTitle{
+        text-align:left;
+    }
+    .content{
+        padding:0 40px; 
     }
 }
 .outlineWrap{
@@ -216,8 +264,8 @@ header img{
     background-color:#e08107;
 }
 .relatedTitle{
-    font-size:200%;
-
+    font-size:150%;
+    margin-bottom:20px;
 }
 .pageNation{
     margin:20px 0;
@@ -247,21 +295,60 @@ header img{
     font-size:200%;
 }
 .content h2{
-    margin-bottom:20px;
-    padding:0 0 20px 0;
-    border-bottom:1px solid #aaaaaa;
+    width:100%;
+    background-color:#dddddd;
+    margin-bottom:40px;
+    margin-top:20px;
+    padding:10px 0 10px 10px;
+    border-left:10px solid #aaaaaa;
+    float:left;
 }
-.content h3,h4,h5,h6{
-    margin-bottom:20px;
+.content h3{
+    width:100%;
+    background-color:#ededed;
+    padding:10px 0 10px 10px;
+    border-left:10px solid #dddddd;
+    margin-bottom:40px;
+    margin-top:20px;
+    float:left;
+}
+.content h4,h5,h6{
+    width:100%;
+    padding:0 10px;
+    margin-bottom:40px;
+    margin-top:20px;
+    float:left;
 }
 .content p{
+    width:100%;
+    padding:0 10px;
     margin-bottom:20px;
+    float:left;
 }
 .content dl{
     padding:20px;
     border:1px solid #dddddd;
 }
+.content img{
+    max-width:100%;
+    height:auto;
+    margin:0 auto;
+}
+.content ul{
+    width:100%;
+    padding:0 0 0 5%;
+    margin-bottom:40px;
+    margin-top:20px;
+    float:left;
+}
 .content dt{
 }
 .content dd{
+}
+.content pre{
+    width:100%;
+    overflow:auto;
+    margin-bottom:40px;
+    margin-top:20px;
+    float:left;
 }

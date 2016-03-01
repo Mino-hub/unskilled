@@ -21,13 +21,7 @@
 
                     <nav class="navbar center-block hidden-xs">
                         <ul class="nav text-center navbar-nav">
-                            <li><a href="<?php bloginfo("url") ?>">ホーム</a></li>
-                            <li><a href="<?php echo bloginfo("url") . "/?page_id=2391" ?>">全記事</a></li>
-                            <li><a href="#">カテゴリ</a></li>
-                            <li><a href="#">記事ランキング</a></li>
-                            <li><a href="#">オススメ記事</a></li>
-                            <li>
-                            </li>
+                            <?php get_template_part("mainnav"); ?>
                         </ul>
                         <form id="inner_srach" method="get" action="<?php bloginfo('url') ?>" />
                             <input type="text" class="form-control" name="s" placeholder="検索したいキーワードを入力(enter)">
@@ -39,11 +33,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                                  role="button" aria-haspopup="true" aria-expanded="false">menu<span class="caret"></span></a>
                                  <ul class="dropdown-menu">
-                                <li><a href="<?php bloginfo("url") ?>">ホーム</a></li>
-                                <li><a href="<?php echo bloginfo("url") . "/?page_id=2391" ?>">全記事</a></li>
-                                <li><a href="#">カテゴリ</a></li>
-                                <li><a href="#">記事ランキング</a></li>
-                                <li><a href="#">オススメ記事</a></li>
+                                    <?php get_template_part("mainnav"); ?>
                                 </ul>
                             </li>
                         </ul>
