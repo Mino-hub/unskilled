@@ -2,16 +2,22 @@
 * Theme Name: unskilled 
 */
 body{
-    color:#332200;
+    color:#333333;
 }
 *{
     box-sizing:border-box;
 }
+pre{
+    word-wrap:normal;
+}
+pre code{
+    white-space:pre;
+}
 a{
-    color:#552200;
+    color:#444444;
 }
 a:link{
-    color:#552200;
+    color:#444444;
 }
 a:visited{
     color:#aaaaaa;
@@ -23,7 +29,7 @@ a:active{
     color:#999999;
 }
 header{
-    padding:40px 0 20px 0;
+    padding:20px 0 20px 0;
 }
 footer{
     padding:20px;
@@ -54,11 +60,13 @@ header img{
     margin-bottom:20px;
 }
 .navbar{
+    width:50%;
     margin-bottom:0px;
 }
 .headerDisp{
     margin-bottom:20px;
     font-weight:900;
+    /* border-bottom:1px solid #eeeeee; */
 }
 .articleDate{
     margin-bottom:10px;
@@ -70,14 +78,18 @@ header img{
 }
 .articleCategory a{
     margin-right:20px;
-    color:#71634d;
 }
 .articleTitle{
     margin-bottom:20px;
     padding:5px 0;
 }
+.articleTitle h1{
+    font-size:36px;
+    font-weight:900;
+    line-height:150%;
+}
 .recomend img{
-    width:90%;
+    max-width:100%;
     height:auto;
     margin-bottom:40px;
 }
@@ -107,11 +119,29 @@ header img{
 .tw{
     width:75px
 }
-.related
-{
-    margin-bottom:40px;
-}
 @media (min-width: 320px){
+    .container-fluid{
+        padding-right:0px;
+        padding-left:0px;
+    }
+    header{
+        padding:20px 15px 20px 15px;
+    }
+    .navbar{
+        width:100%;
+        margin-bottom:0px;
+    }
+    .main{
+        padding-right:0px;
+        padding-left:0px;
+    }
+    .articleTitle{
+        margin-bottom: 20px;
+        padding: 5px 15px;
+    }
+    .articleTitle h1{
+        font-size:30px;
+    }
     .recomend img{
         width:70%;
         height:auto;
@@ -138,8 +168,47 @@ header img{
     .relatedTitle{
         text-align:center;
     }
+    .related
+    {
+        width:100%;
+        padding:0 15px;
+        float:left;
+        margin-bottom:40px;
+    }
     .content{
-        padding:0 0px; 
+        width:100%;
+        padding:0 15px; 
+        float:left;
+    }
+    .content h2{
+        font-size:20px;
+        margin:20px 0 40px 0;
+        padding:10px 10px 10px 0px;
+        font-weight:900;
+        float:left;
+    }
+    .content h3{
+        width:100%;
+        color:#333333;
+        font-size:16px;
+        margin:20px 0 40px 0;
+        font-weight:900;
+        float:left;
+    }
+    .content h4,h5,h6{
+        width:100%;
+        color:#333333;
+        font-size:14px;
+        margin:20px 0 40px 0;
+        font-weight:900;
+        float:left;
+    }
+    .adspace{
+        max-width:336px;
+        min-width:250px;
+        height:280px;
+        margin:20px auto;
+        background-color:#888888;
     }
 }
 .outlineWrap{
@@ -173,6 +242,30 @@ header img{
 .outlineh4{
 }
 @media (min-width: 768px){
+    .container-fluid{
+        padding-right:30px;
+        padding-left:30px;
+    }
+    header{
+        padding:20px 0 20px 0;
+    }
+    .navbar{
+        width:50%;
+        margin-bottom:0px;
+    }
+    .main{
+        padding-right:15px;
+        padding-left:15px;
+    }
+    .articleTitle{
+        margin-bottom: 20px;
+        padding: 5px 0px;
+    }
+    .articleTitle h1{
+        font-size:36px;
+        font-weight:900;
+        line-height:150%;
+    }
     .recomend img{
         width:50%;
         height:auto;
@@ -199,8 +292,24 @@ header img{
     .relatedTitle{
         text-align:left;
     }
+    .related
+    {
+        width:100%;
+        padding:0 0px;
+        float:left;
+        margin-bottom:40px;
+    }
     .content{
-        padding:0 40px; 
+        width:100%;
+        padding:0 80px; 
+        float:left;
+    }
+    .adspace{
+        max-width:336px;
+        min-width:250px;
+        height:280px;
+        margin:20px auto;
+        background-color:#888888;
     }
 }
 .outlineWrap{
@@ -243,9 +352,9 @@ header img{
     margin-bottom:5px;
     padding-left:6px;
 }
-.content img{
-    max-width:100%;
-    height:auto;
+.snsWw{
+    width:100%;
+    float:left;
 }
 .newArticleSpace,
 .categorySpace,
@@ -262,6 +371,7 @@ header img{
     padding:5px 0;
     color:#ffffff;
     background-color:#e08107;
+    /* background-color:#999999; */
 }
 .relatedTitle{
     font-size:150%;
@@ -287,58 +397,79 @@ header img{
     margin-bottom:10px;
 }
 .indexEx{
+    width:100%;
     margin-bottom:20px;
     padding:20px;
     border:1px solid #dddddd;
+    float:left;
 }
 .is{
     font-size:200%;
 }
-.content h2{
-    width:100%;
-    background-color:#dddddd;
-    margin-bottom:40px;
-    margin-top:20px;
-    padding:10px 0 10px 10px;
-    border-left:10px solid #aaaaaa;
-    float:left;
-}
-.content h3{
-    width:100%;
-    background-color:#ededed;
-    padding:10px 0 10px 10px;
-    border-left:10px solid #dddddd;
-    margin-bottom:40px;
-    margin-top:20px;
-    float:left;
-}
-.content h4,h5,h6{
-    width:100%;
-    padding:0 10px;
-    margin-bottom:40px;
-    margin-top:20px;
-    float:left;
-}
-.content p{
-    width:100%;
-    padding:0 10px;
-    margin-bottom:20px;
-    float:left;
-}
 .content dl{
     padding:20px;
     border:1px solid #dddddd;
+    float:left;
 }
 .content img{
     max-width:100%;
     height:auto;
-    margin:0 auto;
+    margin:20px auto;
 }
 .content ul{
     width:100%;
     padding:0 0 0 5%;
     margin-bottom:40px;
     margin-top:20px;
+    float:left;
+}
+.content p{
+    width:100%;
+    color:#666666;
+    line-height:150%;
+    margin-bottom:20px;
+    float:left;
+}
+.content h2{
+    width:100%;
+    color:#333333;
+    /* border-radius: 4px; */
+    /* border:1px solid #e08107; */
+    font-size:24px;
+    line-height:150%;
+    margin:20px 0 20px 0;
+    /* padding:10px 10px 10px 0px; */
+    font-weight:900;
+    float:left;
+}
+.content h3{
+    width:100%;
+    /* border-radius: 4px; */
+    /* border:1px solid #e08107; */
+    color:#333333;
+    font-size:18px;
+    line-height:150%;
+    margin:20px 0 40px 0;
+    /* padding:10px 10px 10px 10px; */
+    font-weight:900;
+    float:left;
+}
+.content h4{
+    width:100%;
+    color:#333333;
+    font-size:16px;
+    line-height:150%;
+    margin:20px 0 40px 0;
+    font-weight:900;
+    float:left;
+}
+.content h5,h6{
+    width:100%;
+    color:#333333;
+    font-size:14px;
+    line-height:150%;
+    margin:20px 0 40px 0;
+    font-weight:900;
     float:left;
 }
 .content dt{
@@ -350,5 +481,13 @@ header img{
     overflow:auto;
     margin-bottom:40px;
     margin-top:20px;
+    float:left;
+}
+.adspacewrap{
+    width:100%;
+    float:left;
+}
+div.githubgist{
+    width:100%;
     float:left;
 }

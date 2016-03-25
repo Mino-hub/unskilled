@@ -1,5 +1,5 @@
+<div class="snsWw">
 <div class="snsWrap">
-
     <!-- hatena -->
     <div class="snsBo hb">
     <a href="http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>"
@@ -46,4 +46,5 @@
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+</div>
 </div>

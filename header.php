@@ -7,6 +7,7 @@
         <title><?php wp_title(); ?></title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+        <link rel="SHORTCUT ICON" href="<?php echo get_template_directory_uri();?>/img/favicon.png">
     </head>
     <body>
         <div class="container-fluid">
@@ -15,10 +16,6 @@
                     <a href="<?php echo site_url(); ?>">
                         <img src="<?php echo get_template_directory_uri();?>/img/prog3.png">
                     </a>
-                    <div class="headerDisp">
-                        [Unskilled?] プログラミング未経験のおっさんがプログラマになるべく頑張るブログ
-                    </div>
-
                     <nav class="navbar center-block hidden-xs">
                         <ul class="nav text-center navbar-nav">
                             <?php get_template_part("mainnav"); ?>

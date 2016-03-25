@@ -6,7 +6,7 @@
 <?php
 $content = $post->post_content;
 // var_dump($content);
-preg_match_all("/<(h[1-6]{1}) id=.*>(.*)<\/h[1-6]{1}>/u", $content, $htag, PREG_SET_ORDER);
+preg_match_all("/<(h[1-6]{1}).*>(.*)<\/h[1-6]{1}>/u", $content, $htag, PREG_SET_ORDER);
 // var_dump($htag);
 
 $h1Flag = $h2Flag = $h3Flag = $h4Flag = $h5Flag = $h6Flag = 0;
