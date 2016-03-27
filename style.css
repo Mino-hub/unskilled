@@ -59,13 +59,6 @@ header img{
     max-width:100%;
     margin-bottom:20px;
 }
-.pageNation{
-    margin:20px 10px;
-}
-.pageNation span,a{
-    margin:0 10px;
-}
-.navbar{
 .navbar{
     width:50%;
     margin-bottom:0px;
@@ -386,7 +379,10 @@ header img{
     margin-bottom:20px;
 }
 .pageNation{
-    margin:20px 0;
+    margin:20px 10px;
+}
+.pageNation span,a{
+    margin:0 10px;
 }
 .sidebar{
      margin-top:20px;
