@@ -27,7 +27,7 @@
         <div class="content">
             <?php the_content();?>
         </div>
-        <?php get_template_part("adspace"); ?>
+        <?php get_template_part("adspace2"); ?>
         <?php get_template_part("sns"); ?>
 <?php get_template_part("related"); ?>
 <?php endif; wp_reset_query();?>
