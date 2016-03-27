@@ -75,6 +75,7 @@ header img{
 .articleCategory{
     margin-bottom:20px;
     padding:5px 0;
+    overflow-wrap:break-word;
 }
 .articleCategory a{
     margin-right:20px;
