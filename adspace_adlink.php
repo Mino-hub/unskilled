@@ -1,5 +1,5 @@
 <div class="adspacewrap">
-    <div class="adspace">
+    <div class="adspace-adlink">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- unskilled.site広告リンク -->
         <ins class="adsbygoogle"
