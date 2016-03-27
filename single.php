@@ -30,6 +30,7 @@
         <?php get_template_part("adspace2"); ?>
         <?php get_template_part("sns"); ?>
 <?php get_template_part("related"); ?>
+<?php get_template_part("adspace3"); ?>
 <?php endif; wp_reset_query();?>
 <?php get_template_part("comments"); ?>
 </div><!-- main -->
