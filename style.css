@@ -210,7 +210,7 @@ header img{
     }
     .adspace-adlink{
         max-width:200px;
-        margin:20px auto;
+        margin:20px auto 50px auto;
     }
 }
 .outlineWrap{
@@ -312,7 +312,7 @@ header img{
     }
     .adspace-adlink{
         max-width:728px;
-        margin:20px auto;
+        margin:20px auto 50px auto;
     }
 }
 .outlineWrap{
