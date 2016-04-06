@@ -16,6 +16,9 @@
     $wp_query = new WP_Query($args);
 ?>
 <?php if (have_posts()) : ?>    
+<div class="is text-center">
+    全記事リスト
+</div>
 <ol>
     <?php while (have_posts()) : the_post(); ?>
             <li>

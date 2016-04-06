@@ -1,8 +1,7 @@
 <?php
     $args = array(
-        'posts_per_page'   => 15, 
-        'orderby'          => 'date',
-        'order'            => 'DESC',
+        'posts_per_page'   => 25, 
+        'orderby'          => 'rand',
         'post_type'        => array('post'),
         'post_status'      => 'publish'
     );
