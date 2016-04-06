@@ -15,9 +15,9 @@
     );
     $wp_query = new WP_Query($args);
 ?>
-<?php get_template_part("pagenation"); ?>
 <?php if (have_posts()) : ?>    
     <?php while (have_posts()) : the_post(); ?>
+<?php get_template_part("pagenation"); ?>
     <div class="indexEx">
         <div class="articleDate text-center">
             <time>最終更新日時 <?php echo get_the_modified_date("Y/m/d H:i:s");?></time>
@@ -30,8 +30,8 @@
             </h1>
         </div>
     </div>
-    <?php endwhile; ?>
 <?php get_template_part("pagenation"); ?>
+    <?php endwhile; ?>
 <?php endif; wp_reset_query();?>
 </div><!-- main -->
 <?php get_template_part("sidebar"); ?>
