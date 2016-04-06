@@ -7,7 +7,7 @@
 <?php get_template_part("is"); ?>
 <?php
     $args = array(
-        'posts_per_page'   => 15, 
+        'posts_per_page'   => -1, 
         'orderby'          => 'date',
         'order'            => 'DESC',
         'post_type'        => array('post'),
@@ -15,24 +15,8 @@
     );
     $allarticle = new WP_Query($args);
 ?>
-<?php if ($allarticle->have_posts()) : ?>    
-<div class="pageNation">
-    <?php
-        $big = 999999999; 
-        echo paginate_links( array(
-            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-            'show_all'=>true,
-            'format' => '/page/%#%',
-            'current' => max( 1, get_query_var('paged') ),
-            'total' => $allarticle->max_num_pages
-        ) );
-    ?>
-</div>
-    <?php while ($allarticle->have_posts()) : $allarticle->the_post(); ?>
-    <div class="indexEx">
-        <div class="articleDate text-center">
-            <time>最終更新日時 <?php echo get_the_modified_date("Y/m/d H:i:s");?></time>
-        </div>
+<?php if (have_posts()) : ?>    
+    <?php while (have_posts()) : the_post(); ?>
         <div class="articleTitle text-center">
             <h1>
                 <a href="<?php the_permalink(); ?>">
@@ -40,9 +24,7 @@
                 </a>
             </h1>
         </div>
-    </div>
     <?php endwhile; ?>
-<?php get_template_part("pagenation"); ?>
 <?php endif; wp_reset_query();?>
 </div><!-- main -->
 <?php get_template_part("sidebar"); ?>
