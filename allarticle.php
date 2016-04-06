@@ -13,7 +13,7 @@
         'post_type'        => array('post'),
         'post_status'      => 'publish'
     );
-    $allarticle = new WP_Query($args);
+    $wp_query = new WP_Query($args);
 ?>
 <?php if (have_posts()) : ?>    
     <?php while (have_posts()) : the_post(); ?>
