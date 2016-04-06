@@ -16,15 +16,15 @@
     $wp_query = new WP_Query($args);
 ?>
 <?php if (have_posts()) : ?>    
+<ol>
     <?php while (have_posts()) : the_post(); ?>
-        <div class="articleTitle text-center">
-            <h1>
+            <li>
                 <a href="<?php the_permalink(); ?>">
                     <?php the_title();?>
                 </a>
-            </h1>
-        </div>
+            </li>
     <?php endwhile; ?>
+</ol>
 <?php endif; wp_reset_query();?>
 </div><!-- main -->
 <?php get_template_part("sidebar"); ?>
