@@ -143,6 +143,7 @@ header img{
     .articleTitle{
         margin-bottom: 20px;
         padding: 5px 15px;
+        float:left;
     }
     .articleTitle h1{
         font-size:30px;
@@ -270,6 +271,7 @@ header img{
     .articleTitle{
         margin-bottom: 20px;
         padding: 5px 0px;
+        float:left;
     }
     .articleTitle h1{
         font-size:36px;
