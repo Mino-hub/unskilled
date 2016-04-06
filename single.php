@@ -12,10 +12,18 @@
         <?php get_template_part("sns"); ?>
         <div class="articleCategory text-center">
         <?php
-            foreach (get_the_category() as $item) {
-                $link = get_category_link($item->term_id);
-                echo "<a href=\"{$link}\">{$item->name}</a>";
+            $posttags = get_the_tags();
+            if ($posttags) {
+                  foreach($posttags as $tag) {
+                       echo "<a href=\"". get_tag_link($tag->term_id) ."\">" . $tag->name . "</a>";
+                  }
             }
+        ?>
+        <?php
+            // foreach (get_the_category() as $item) {
+            //     $link = get_category_link($item->term_id);
+            //     echo "<a href=\"{$link}\">{$item->name}</a>";
+            // }
         ?>
         </div>
         <div class="recomend text-center">
@@ -31,6 +39,7 @@
         <?php get_template_part("adspace2"); ?>
         <?php get_template_part("sns"); ?>
 <?php get_template_part("adspace_adlink2"); ?>
+<?php get_template_part("singlecategory"); ?>
 <?php get_template_part("related"); ?>
 <?php get_template_part("adspace3"); ?>
 <?php endif; wp_reset_query();?>

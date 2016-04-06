@@ -1,3 +1,8 @@
+<?php
+/*
+ * Template Name:allarticle 
+ * */
+?>
 <?php get_header(); ?>
 <?php get_template_part("is"); ?>
 <?php get_template_part("pagenation"); ?>
@@ -13,22 +18,6 @@
                     <?php the_title();?>
                 </a>
             </h1>
-        </div>
-        <div class="articleCategory text-center">
-        <?php
-            $posttags = get_the_tags();
-            if ($posttags) {
-                  foreach($posttags as $tag) {
-                       echo "<a href=\"". get_tag_link($tag->term_id) ."\">" . $tag->name . "</a>";
-                  }
-            }
-        ?>
-        </div>
-        <div class="recomend text-center">
-            <?php the_post_thumbnail(); ?>
-        </div>
-        <div class="content">
-            <?php the_excerpt();?>
         </div>
     </div>
     <?php endwhile; ?>
