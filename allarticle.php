@@ -5,7 +5,6 @@
 ?>
 <?php get_header(); ?>
 <?php get_template_part("is"); ?>
-<?php get_template_part("pagenation"); ?>
 <?php
     $args = array(
         'posts_per_page'   => 15, 
@@ -16,6 +15,7 @@
     );
     $wp_query = new WP_Query($args);
 ?>
+<?php get_template_part("pagenation"); ?>
 <?php if (have_posts()) : ?>    
     <?php while (have_posts()) : the_post(); ?>
     <div class="indexEx">
@@ -31,8 +31,8 @@
         </div>
     </div>
     <?php endwhile; ?>
-<?php endif; wp_reset_query();?>
 <?php get_template_part("pagenation"); ?>
+<?php endif; wp_reset_query();?>
 </div><!-- main -->
 <?php get_template_part("sidebar"); ?>
 <?php get_footer(); ?>
