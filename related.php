@@ -19,16 +19,6 @@ $wp_query = new WP_Query($args);
     <div class="relatedTitle">
         関連する記事
     </div>
-    <ul>
-        <?php if (have_posts()) : ?>    
-            <?php while (have_posts()) : the_post(); ?>
-            <li>
-                <a href="<?php the_permalink() ?>">
-                    <?php the_title(); ?>
-                </a>
-            </li>
-            <?php endwhile; ?>
-        <?php endif; wp_reset_query(); ?>
-    </ul>
+    <?php related_posts(); ?>
 </div>
 
