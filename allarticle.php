@@ -15,7 +15,7 @@
     );
     $allarticle = new WP_Query($args);
 ?>
-<?php if (have_posts()) : ?>    
+<?php if ($allarticle->have_posts()) : ?>    
 <div class="pageNation">
     <?php
         $allarticle;
@@ -28,7 +28,7 @@
         ) );
     ?>
 </div>
-    <?php while (have_posts()) : the_post(); ?>
+    <?php while ($allarticle->have_posts()) : $allarticle->the_post(); ?>
     <div class="indexEx">
         <div class="articleDate text-center">
             <time>最終更新日時 <?php echo get_the_modified_date("Y/m/d H:i:s");?></time>
