@@ -13,10 +13,21 @@
         'post_type'        => array('post'),
         'post_status'      => 'publish'
     );
-    $wp_query = new WP_Query($args);
+    $allarticle = new WP_Query($args);
 ?>
 <?php if (have_posts()) : ?>    
-<?php get_template_part("pagenation"); ?>
+<div class="pageNation">
+    <?php
+        $allarticle;
+        $big = 999999999; 
+        echo paginate_links( array(
+            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+            'format' => '?paged=%#%',
+            'current' => max( 1, get_query_var('paged') ),
+            'total' => $allarticle->max_num_pages
+        ) );
+    ?>
+</div>
     <?php while (have_posts()) : the_post(); ?>
     <div class="indexEx">
         <div class="articleDate text-center">
