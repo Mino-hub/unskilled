@@ -6,6 +6,16 @@
 <?php get_header(); ?>
 <?php get_template_part("is"); ?>
 <?php get_template_part("pagenation"); ?>
+<?php
+    $args = array(
+        'posts_per_page'   => 15, 
+        'orderby'          => 'date',
+        'order'            => 'DESC',
+        'post_type'        => array('post'),
+        'post_status'      => 'publish'
+    );
+    $wp_query = new WP_Query($args);
+?>
 <?php if (have_posts()) : ?>    
     <?php while (have_posts()) : the_post(); ?>
     <div class="indexEx">
