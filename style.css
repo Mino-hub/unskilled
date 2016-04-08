@@ -87,7 +87,7 @@ header img{
     float:left;
 }
 .articleCategory a{
-    padding:5px;
+    line-height:300%;
 }
 .articleTitle{
     width:100%;
