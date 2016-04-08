@@ -58,6 +58,7 @@ li{
 blockquote{
     width:100%;
     float:left;
+    overflow-wrap:break-word;
 }
 header img{
     max-width:100%;
@@ -89,11 +90,11 @@ header img{
     padding:5px;
 }
 .articleTitle{
+    width:100%;
     margin-bottom:20px;
     padding:5px 0;
 }
 .articleTitle h1{
-    width:100%;
     font-size:36px;
     font-weight:900;
     line-height:150%;
@@ -146,12 +147,12 @@ header img{
         padding-left:0px;
     }
     .articleTitle{
+        width:100%;
         margin-bottom: 20px;
         padding: 5px 15px;
         float:left;
     }
     .articleTitle h1{
-        width:100%;
         font-size:30px;
     }
     .recomend img{
@@ -275,12 +276,12 @@ header img{
         padding-left:15px;
     }
     .articleTitle{
+        width:100%;
         margin-bottom: 20px;
         padding: 5px 0px;
         float:left;
     }
     .articleTitle h1{
-        width:100%;
         font-size:36px;
         font-weight:900;
         line-height:150%;
