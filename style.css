@@ -93,6 +93,7 @@ header img{
     padding:5px 0;
 }
 .articleTitle h1{
+    width:100%;
     font-size:36px;
     font-weight:900;
     line-height:150%;
@@ -150,6 +151,7 @@ header img{
         float:left;
     }
     .articleTitle h1{
+        width:100%;
         font-size:30px;
     }
     .recomend img{
@@ -278,6 +280,7 @@ header img{
         float:left;
     }
     .articleTitle h1{
+        width:100%;
         font-size:36px;
         font-weight:900;
         line-height:150%;
