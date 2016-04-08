@@ -10,6 +10,9 @@
         <link rel="SHORTCUT ICON" href="<?php echo get_template_directory_uri();?>/img/favicon.png">
     </head>
     <body>
+<div id="top">
+    <img src="<?php echo get_template_directory_uri();?>/img/top.png">
+</div>
 <?php if ( !is_user_logged_in() ){
 echo <<<aaa
         <script>

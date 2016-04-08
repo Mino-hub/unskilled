@@ -115,6 +115,9 @@ header img{
     padding:20px;
     border:1px solid #aaaaaa;
 }
+.outlineList li{
+    cursor:pointer;
+}
 .snsBo{
     margin-right:5px;
     margin-bottom:0px;
@@ -337,46 +340,6 @@ header img{
         margin:20px auto;
     }
 }
-.outlineWrap{
-    width:100%;
-}
-.outlineTitle{
-    margin-bottom:5px;
-}
-.outlineToggle{
-    cursor:pointer;
-}
-.outlineToggle:hover{
-    color:orangered;
-}
-.outlineh1{
-    font-size:110%;
-    font-weight:900;
-    margin-bottom:5px;
-    padding-left:0px;
-}
-.outlineh2{
-    font-size:110%;
-    font-weight:900;
-    margin-bottom:5px;
-    padding-left:0px;
-}
-.outlineh3{
-    margin-bottom:5px;
-    padding-left:20px;
-}
-.outlineh4{
-    margin-bottom:5px;
-    padding-left:40px;
-}
-.outlineh5{
-    margin-bottom:5px;
-    padding-left:60px;
-}
-.outlineh6{
-    margin-bottom:5px;
-    padding-left:6px;
-}
 .snsWw{
     width:100%;
     float:left;
@@ -521,4 +484,11 @@ div.githubgist{
 }
 .children li{
     margin:0 0 0 10px;
+}
+#top{
+    cursor:pointer;
+    z-index:100;
+    position:fixed;
+    left:2%;
+    bottom:2%;
 }
