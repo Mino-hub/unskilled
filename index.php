@@ -16,12 +16,12 @@
         </div>
         <div class="articleCategory text-center">
         <?php
-            $posttags = get_the_tags();
-            if ($posttags) {
-                  foreach($posttags as $tag) {
-                       echo "<a href=\"". get_tag_link($tag->term_id) ."\">" . $tag->name . "</a>";
-                  }
-            }
+            // $posttags = get_the_tags();
+            // if ($posttags) {
+            //       foreach($posttags as $tag) {
+            //            echo "<a href=\"". get_tag_link($tag->term_id) ."\">" . $tag->name . "</a>";
+            //       }
+            // }
         ?>
         </div>
         <div class="recomend text-center">
