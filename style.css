@@ -272,6 +272,16 @@ header img{
     padding-left:20px;
 }
 .outlineh4{
+    margin-bottom:5px;
+    padding-left:25px;
+}
+.outlineh5{
+    margin-bottom:5px;
+    padding-left:30px;
+}
+.outlineh6{
+    margin-bottom:5px;
+    padding-left:35px;
 }
 @media (min-width: 768px){
     .container-fluid{
