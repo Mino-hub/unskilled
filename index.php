@@ -15,7 +15,9 @@
             </h1>
         </div>
         <div class="recomend text-center">
-            <?php the_post_thumbnail(); ?>
+            <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail(); ?>
+            </a>
         </div>
     </div>
     <?php endwhile; ?>
