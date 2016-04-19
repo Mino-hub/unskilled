@@ -26,7 +26,7 @@
             // }
         ?>
         </div>
-        <div class="recomend text-center">
+        <div class="recomend-s text-center">
             <?php the_post_thumbnail(); ?>
         </div>
         <div class="outlineWrap center-block col-xs-12">

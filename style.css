@@ -82,7 +82,7 @@ header img{
 .articleCategory{
     width:100%;
     margin-bottom:20px;
-    padding:5px 0;
+    padding:5px 10px;
     overflow-wrap:break-word;
     float:left;
 }
@@ -104,6 +104,12 @@ header img{
     height:auto;
     margin-bottom:0px;
 }
+.recomend-s img{
+    max-width:100%;
+    height:auto;
+    margin-bottom:20px;
+}
+
 .snsWrap{
     width:100%;
     margin:0 auto;
@@ -385,6 +391,9 @@ header img{
     width:100%;
     float:left;
 }
+.newArticleSpace a{
+    margin:0;
+}
 .newArticleSpace,
 .categorySpace,
 .authorSpace,
@@ -461,6 +470,10 @@ header img{
     line-height:150%;
     margin-bottom:20px;
     float:left;
+    word-break:break-all;
+}
+.content a{
+    text-decoration:underline;
 }
 .content h2{
     width:100%;
