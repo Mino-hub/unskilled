@@ -386,12 +386,21 @@ header img{
         border:1px solid #dddddd;
         float:left;
     }
+    .yarrpp-related ol{
+        padding:0;
+    }
 }
 .snsWw{
     width:100%;
     float:left;
 }
+.related a{
+    margin:0;
+}
 .newArticleSpace a{
+    margin:0;
+}
+.yarrpp-related a{
     margin:0;
 }
 .newArticleSpace,
