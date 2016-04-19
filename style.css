@@ -386,7 +386,10 @@ header img{
         border:1px solid #dddddd;
         float:left;
     }
-    .yarrpp-related ol{
+    .yarpp-related ol{
+        padding:0;
+    }
+    .related ol{
         padding:0;
     }
 }
