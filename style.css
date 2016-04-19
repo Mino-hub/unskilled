@@ -255,6 +255,12 @@ header img{
         border:1px solid #dddddd;
         float:left;
     }
+    .yarpp-related ol{
+        padding:0;
+    }
+    .related ol{
+        padding:0;
+    }
 }
 .outlineWrap{
     width:100%;
@@ -392,6 +398,12 @@ header img{
     .related ol{
         padding:0;
     }
+}
+.yarpp-related ol{
+    padding:0;
+}
+.related ol{
+    padding:0;
 }
 .snsWw{
     width:100%;
